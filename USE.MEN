@@ -1,0 +1,44 @@
+IDR_DRAWCLTYPEUSE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tCtrl+N",                ID_FILE_NEW
+        //MENUITEM "÷&ffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Schlieﬂen",                  ID_FILE_CLOSE
+        MENUITEM "&Sichern\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "Sichern &Als...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Ende",                       ID_APP_EXIT
+    END
+    POPUP "&Zeichnen"
+    BEGIN
+        MENUITEM "&Select",                     ID_DRAW_SELECT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Grid Lines\tG",              ID_VIEW_GRID
+        MENUITEM "&Paper Color...",             ID_VIEW_PAPERCOLOR
+        MENUITEM "Show &Objects",               ID_VIEW_SHOWOBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "&Zoom",                       ID_ZOOM
+        MENUITEM "100 &Prozent",                ID_HUNDERTPROZENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Netz Edit Fenster",          ID_VIEW_NETZ_EDIT
+        MENUITEM "Netz &Use Fenster",           ID_VIEW_NETZ_USE        
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "‹ber &Train...",           ID_APP_ABOUT
+    END
+END
+
