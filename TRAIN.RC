@@ -1,0 +1,462 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\drawcli.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "#include ""afxprint.rc""  // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""  // OLE container resources\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\DRAWCLI.ICO"
+IDR_DRAWCLTYPE          ICON    DISCARDABLE     "RES\\DRAWDOC.ICO"
+IDR_DRAWCLTYPEUSE       ICON    DISCARDABLE     "RES\\NETUSE.ICO"
+IDR_DRAWCLTYPEBENDEF    ICON    DISCARDABLE     "RES\\BENDEF.ICO"
+IDR_DRAWCLTYPEFAHRPLAN  ICON    DISCARDABLE     "RES\\F_PLAN.ICO"
+IDR_DRAWCLTYPEKUNDEN    ICON    DISCARDABLE     "RES\\KUNDEN.ICO"
+IDR_TABTYPE             ICON    DISCARDABLE     "RES\\MAPPE.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "RES\\MAINFRM.BMP"
+IDR_DRAWCLTYPE          BITMAP  MOVEABLE PURE   "RES\\TOOLBAR.BMP" // Netz Editieren
+IDR_DRAWCLTYPEUSE       BITMAP  MOVEABLE PURE   "RES\\F_KARTE.BMP" // TOOLUSE.BMP
+IDR_DRAWCLTYPEBENDEF    BITMAP  MOVEABLE PURE   "RES\\BENDEF1.BMP"
+IDR_DRAWCLTYPEFAHRPLAN  BITMAP  MOVEABLE PURE   "RES\\F_PLAN.BMP"
+IDR_DRAWCLTYPEKUNDEN    BITMAP  MOVEABLE PURE   "RES\\KUNDEN.BMP"
+IDR_DRAWCLTYPEWINDOW    BITMAP  MOVEABLE PURE   "RES\\TOOLWND.BMP"
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "Ö&ffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Drucker &Einstellung...",     ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Ende",                       ID_APP_EXIT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Werkzeugbalken",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statusbalken",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "Über &Train...",           ID_APP_ABOUT
+    END
+END
+
+// Menüs...
+
+#include "fahrp.men"
+
+#include "net.men"
+
+#include "win.men"
+
+#include "kunde.men"
+
+#include "bendef.men"
+
+
+
+IDR_DRAWCLTYPE_CNTR_IP MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Grid Lines\tG",              ID_VIEW_GRID
+        MENUITEM "&Paper Color...",             ID_VIEW_PAPERCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    MENUITEM SEPARATOR
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "+",            ID_OBJECT_MOVETOFRONT,  ASCII,  NOINVERT
+    "-",            ID_OBJECT_MOVEBACK,     ASCII,  NOINVERT
+    "=",            ID_OBJECT_MOVEFORWARD,  ASCII,  NOINVERT
+    "_",            ID_OBJECT_MOVETOBACK,   ASCII,  NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY,CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY,CONTROL, NOINVERT
+    "E",            ID_DRAW_ELLIPSE,        ASCII,  NOINVERT
+    "e",            ID_DRAW_ELLIPSE,        ASCII,  NOINVERT
+    "G",            ID_VIEW_GRID,           ASCII,  NOINVERT
+    "g",            ID_VIEW_GRID,           ASCII,  NOINVERT
+    "L",            ID_DRAW_LINE,           ASCII,  NOINVERT
+    "l",            ID_DRAW_LINE,           ASCII,  NOINVERT
+    "N",            ID_DRAW_ROUNDRECT,      ASCII,  NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL, NOINVERT
+    "n",            ID_DRAW_ROUNDRECT,      ASCII,  NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL, NOINVERT
+    "R",            ID_DRAW_RECT,           ASCII,  NOINVERT
+    "r",            ID_DRAW_RECT,           ASCII,  NOINVERT
+    "S",            ID_DRAW_SELECT,         ASCII,  NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL, NOINVERT
+    "s",            ID_DRAW_SELECT,         ASCII,  NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL, NOINVERT
+    VK_ADD,         ID_OBJECT_MOVEFORWARD,  VIRTKEY,NOINVERT
+    VK_ADD,         ID_OBJECT_MOVETOFRONT,  VIRTKEY,CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY,NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT,         VIRTKEY,NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY,NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPERTIES,     VIRTKEY,ALT, NOINVERT
+    VK_SUBTRACT,    ID_OBJECT_MOVEBACK,     VIRTKEY,NOINVERT
+    VK_SUBTRACT,    ID_OBJECT_MOVETOBACK,   VIRTKEY,CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY,CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL, NOINVERT
+END
+
+IDR_DRAWCLTYPE_CNTR_IP ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT,         VIRTKEY,NOINVERT
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 217, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Über Train"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "Train Reservierungssystem ref. 1.0",IDC_STATIC,40,10,119,8
+    LTEXT           "Copyright \251 1994, All Rights Reserved by" ,IDC_STATIC,40,25,200,8
+    LTEXT           "Lothar Behrens.",IDC_STATIC,40,40,200,8
+    DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
+END
+
+IDD_PROP_RECT DIALOG DISCARDABLE  20, 20, 185, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Shape Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Outline",IDC_STATIC,6,6,101,33
+    LTEXT           "Weight:",IDC_STATIC,11,20,27,8
+    EDITTEXT        IDC_WEIGHT,41,18,21,13,ES_AUTOHSCROLL
+    GROUPBOX        "Fill",IDC_STATIC,6,44,100,40
+    CONTROL         "None",IDC_NOFILL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,56,35,10
+    DEFPUSHBUTTON   "OK",IDOK,129,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,23,50,14
+END
+
+#include "order.dlg"
+#include "text.dlg"
+#include "bmmenu.dlg"
+#include "zoom.dlg"
+#include "conndlg.dlg"
+#include "statistk.dlg"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PENCIL              CURSOR  DISCARDABLE     "RES\\PENCIL.CUR"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_BUSY                "Server is still busy."
+    IDP_OLE_INIT_FAILED     "OLE 2.0 initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Train Windows Anwendung"
+    IDR_DRAWCLTYPE          "Netz Editieren\ndrawcl\nDrawcl\nDrawcl File (*.drw)\n.drw\nDrawclDocument\nDrawcl Document"
+    IDR_DRAWCLTYPEUSE       "Fahrkartenauswahl\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    IDR_DRAWCLTYPEBENDEF    "Standartobjekte\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    IDR_DRAWCLTYPEFAHRPLAN  "Fahrpläne\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    IDR_TABTYPE             "Netz - Verwaltung\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    IDR_DRAWCLTYPEWINDOW    "Fenster\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    IDR_DRAWCLTYPEKUNDEN    "Kunden Verwaltung\ndrawcl\n\n\n\nDrawclDocument\nDrawcl Document"
+    
+    IDS_CANNOT_OPEN_DRAWDOC 
+                            "%1 kann nicht geöffnet werden, oder ist kein TRAIN - Document."
+
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Train Windows Anwendung"
+    AFX_IDS_IDLEMESSAGE     "Bereit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_STATUS     "Nothing                     "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Erzeugen eines neuen Dokuments"
+    ID_FILE_OPEN            "Öffnen eines existierenden Dokuments"
+    ID_FILE_CLOSE           "Schließen des aktuellen Dokuments"
+    ID_FILE_SAVE            "Sichern des aktuellen Dokuments"
+    ID_FILE_SAVE_AS         "Sichern des aktuellen Documents mit einem anderen Namen"
+    ID_FILE_PAGE_SETUP      "Ändern der Drucker - Seiteneinstellung"
+    ID_FILE_PRINT_SETUP     "Ändern der Druckereinstellung"
+    ID_FILE_PRINT           "Drucken des aktuellen Dokuments"
+    ID_FILE_PRINT_PREVIEW   "Druckervorschau"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Copyright der Train - Anwendung"
+    ID_APP_EXIT             "Beendet die Anwendung. (Frage, für sichern der Daten, wenn vorhanden.)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Öffne dieses Document"
+    ID_FILE_MRU_FILE2       "Öffne dieses Document"
+    ID_FILE_MRU_FILE3       "Öffne dieses Document"
+    ID_FILE_MRU_FILE4       "Öffne dieses Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_SPLIT         "Split the active window into panes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new linked or embedded object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_GRID            "Zeige oder verstecke Rasterlinien"
+    ID_DRAW_SELECT          "Selektiere Objekt"
+    ID_DRAW_LINE            "Zeichnet eine Linie"
+    ID_DRAW_RECT            "Zeichnet ein Rechteck"
+    ID_DRAW_ROUNDRECT       "Zeichnet ein Rechteck mit runden Ecken"
+    ID_DRAW_ELLIPSE         "Zeichnet eine Ellipse"
+    ID_OBJECT_LINECOLOR     "Wechselt Farbe (Linie oder Text)"
+    ID_OBJECT_FILLCOLOR     "Wechselt Füll - oder Hindergrundfarbe"
+    ID_OBJECT_MOVETOFRONT   "Bewegt Objekt in den Vordergrund"
+    ID_OBJECT_MOVETOBACK    "Bewegt Objekt in den Hintergrund"
+    ID_OBJECT_MOVEFORWARD   "Bewegt Objekt eine Stufe höher"
+    ID_OBJECT_MOVEBACK      "Bewegt Objekt eine Stufe niedriger"
+    ID_VIEW_PAPERCOLOR      "Wechselt Papierfarbe, die im Edit - Modus gezeigt wird"
+    ID_DRAW_POLYGON         "Zeichnet ein Polygon"
+    ID_DRAW_BAHNHOF         "Zeichnet einen Bahnhof"
+    ID_CONNECT_BAHNHOF      "Verbindet zwei Bahnhöfe" 
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    ID_NEU_SEITE            "Erzeugt eine neue Seite"
+    ID_DELETE_SEITE         "Loescht die aktuelle Seite"
+
+    ID_SEITE_UP             "Naechste Seite"
+    ID_SEITE_DN             "Seite zurueck"
+    ID_SEITE_HOME           "Erste Seite"
+    ID_SEITE_END            "Letzte Seite"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    ID_ZOOM                 "Zoomfaktor einstellen"
+    ID_HUNDERTPROZENT       "Zoomfaktor auf 100 % stellen"
+    ID_DRAW_TEXT            "Zeichnet ein Text - Objekt"
+    ID_ADD_DATA_OBJ         "Zeichnet ein Text - Objekt"
+    ID_DRAW_NEU_ELEMENT     "Zeichnet ein neues Element"
+    ID_DRAW_ADD_ELEMENT     "Hängt ein Element an ein selektiertes an"
+    ID_DRAW_ATTRIBUTE       "Zeigt Einstellungen eines Objektes"
+    ID_DRAW_TABELLE         "Zeichnet eine Tabelle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SHOWOBJECTS     "Toggle OLE object indication"
+    ID_EDIT_PROPERTIES      "Edit drawing object properties"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\drawcli.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  // Standard components
+#include "afxprint.rc"  // printing/print preview resources
+#include "afxolecl.rc"  // OLE container resources
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
