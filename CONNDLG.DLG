@@ -1,0 +1,15 @@
+IDD_CONNDLG DIALOG 15, 35, 218, 127
+STYLE WS_CAPTION | WS_CHILD | WS_VISIBLE
+CAPTION "Verbindungsarten"
+FONT 8, "Helv"
+BEGIN
+        CONTROL "", ID_CLIENTCBOX, "COMBOBOX", CBS_DROPDOWN | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 5, 30, 62, 58
+        CONTROL "", ID_SERVERCBOX, "COMBOBOX", CBS_DROPDOWN | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 151, 30, 63, 58
+        CONTROL "Server", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 160, 5, 40, 11
+        CONTROL "Client", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 5, 5, 64, 11
+        CONTROL "Frame", -1, "STATIC", SS_BLACKFRAME | WS_CHILD | WS_VISIBLE, 4, 19, 209, 1
+        CONTROL "Verschiebungsarten", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 75, 30, 62, 10
+        CONTROL "Ein Client Objekt ist ein angehängtes Objekt", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 5, 90, 63, 30
+        CONTROL "Ein Server Objekt kann andere Objekte aufnehmen", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 150, 90, 63, 30
+END
+
