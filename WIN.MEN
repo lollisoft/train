@@ -1,0 +1,70 @@
+IDR_DRAWCLTYPEWINDOW MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tCtrl+N",                ID_FILE_NEW
+        //MENUITEM "÷&ffnen...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Schlieﬂen",                  ID_FILE_CLOSE
+        MENUITEM "&Sichern\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "Sichern &Als...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Ende",                       ID_APP_EXIT
+    END
+    POPUP "&Ver‰ndern"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_CLEAR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "Proper&ties...\tAlt+Enter",   ID_EDIT_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&Zeichnen"
+    BEGIN
+        MENUITEM "&Selektieren",                ID_DRAW_SELECT
+        MENUITEM "&Fenster Objekt",             ID_CREATE_WINDOW
+    END
+    POPUP "&Objekt"
+    BEGIN
+        MENUITEM "&Line Color...",              ID_OBJECT_LINECOLOR
+        MENUITEM "&Fill Color...",              ID_OBJECT_FILLCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Move To Front\tCtrl+Plus",    ID_OBJECT_MOVETOFRONT
+        MENUITEM "Move To Back\tCtrl+Minus",    ID_OBJECT_MOVETOBACK
+        MENUITEM "Move Forward\tPlus",          ID_OBJECT_MOVEFORWARD
+        MENUITEM "Move Back\tMinus",            ID_OBJECT_MOVEBACK
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Grid Lines\tG",              ID_VIEW_GRID
+        MENUITEM "&Paper Color...",             ID_VIEW_PAPERCOLOR
+        MENUITEM "Show &Objects",               ID_VIEW_SHOWOBJECTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "&Zoom",                       ID_ZOOM
+        MENUITEM "100 &Prozent",                ID_HUNDERTPROZENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Netz Edit Fenster",          ID_VIEW_NETZ_EDIT
+        MENUITEM "Netz &Use Fenster",           ID_VIEW_NETZ_USE        
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "‹ber &Train...",           ID_APP_ABOUT
+    END
+END
+
