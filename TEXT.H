@@ -1,0 +1,1 @@
+#define ID_SET_STANDART_FONT   101
